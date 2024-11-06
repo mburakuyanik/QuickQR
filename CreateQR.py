@@ -1,4 +1,5 @@
 import qrcode
+import PIL
 
 qr = qrcode.QRCode(
     version=1,
@@ -12,3 +13,6 @@ qr.make(fit=True)
 
 quickQR = qr.make_image()
 quickQR.show()
+
+# ModuleNotFoundError: No module named 'PIL' hatası alırsanız ---> terminal'e ' pip install Pillow ' yazıp çalıştırın pillow kütüphanesi yüklenecektir.
+# QR için ise ' pip install qrcode==3.0 ' ile qrcode kütüphanesini indirmeniz gerekir.
